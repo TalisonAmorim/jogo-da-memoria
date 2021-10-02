@@ -1,0 +1,32 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 166.67px);
+    gap: 16px;
+
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 166.67px);
+    }
+}
+ :root{
+    font-family: 'Montserrat', sans-serif;
+ }
+.mat-toolbar{
+    height: 100px;
+}
+
+ .mat-toolbar.mat-primary {
+    background: #C3002F;
+    color: #fff;
+  }
+h2{
+    font-size: x-large;
+}
+.logo{
+    
+    height: 60px;
+
+}

@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="text-center">
+  <img class="logo" src="assets/ico.png" alt="">
+  JOGO DA MEMORIA DEV
+</mat-toolbar>
+<div class="p-16">
+  
+
+  <h2 class="text-center estilo-game">Teste sua memória e conheça as linguagens de programação usadas no bootcamp de fullstack da SoulCode academy!</h2>
+ 
+
+  <div class="grid p-16">
+    <app-cartas *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
+    </app-cartas>
+  </div>
+
+  <audio src="assets/illogical.mp3" autoplay controls loop></audio>
+</div>
